@@ -6,9 +6,9 @@
 
 <h3>Controle</h3>
 Pemain 1
-- W = Move Up
+- W = Move Up <br>
 - S = Move Down
 
 Pemain 2 
-- ˄ = Move Up
+- ˄ = Move Up <br>
 - ˅ = Move Down
