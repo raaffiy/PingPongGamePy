@@ -23,6 +23,8 @@ ball = Ball(position=[400, 300])
 score1 = 0
 score2 = 0
 font = pygame.font.Font(None, 74)
+smallFont = pygame.font.Font(None, 30)
+verySmallFont = pygame.font.Font(None, 25)
 
 # Waktu
 clock = pygame.time.Clock()
@@ -110,6 +112,14 @@ while running:
         # Menggambar skor
         score_text = font.render(f"{score1} - {score2}", True, WHITE)
         screen.blit(score_text, (350, 10))
+        pemain1_text = smallFont.render("Pemain 1", True, WHITE)
+        screen.blit(pemain1_text, (50, 50))
+        pemain2_text = smallFont.render("Pemain 2", True, WHITE)
+        screen.blit(pemain2_text, (650, 50))
+        Control_text = verySmallFont.render("W = Move Up     S = Move Down", True, WHITE)
+        screen.blit(Control_text, (70, 530))
+        Control_text2 = verySmallFont.render("^ = Move Up     v = Move Down", True, WHITE)
+        screen.blit(Control_text2, (490, 530))
 
     # Menggambar dinding atas dan bawah
     pygame.draw.line(screen, WHITE, (0, 80), (800, 80), 5)
